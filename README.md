@@ -10,7 +10,7 @@ title: Ubuntu下深度学习库tensorflow和theano环境的配置
 cpu：Intel Xeon
 内存：32G
 OS：Ubuntu 14.04 LTS
-##1、改源
+## 1、改源
 装完Ubuntu系统后要要用装一些包和依赖，首先改源，是下载的速度变快，这里改科大的源。
 ###改Ubuntu的源：
 ```python
@@ -34,11 +34,11 @@ sudo apt-get update
 ```shell
 sudo apt-get install -y libopenblas-dev liblapack-dev libatlas-base-dev gcc g++ git gfortran
 ```
-###安装 python-dev python-pip python-nose
+### 安装 python-dev python-pip python-nose
 ```shell
 sudo apt-get install python3-dev python3-pip python3-nose 
 ```
-###安装Numpy
+### 安装Numpy
 ```shell
 sudo pip install numpy
 ```
@@ -46,7 +46,7 @@ sudo pip install numpy
 ```shell
 python -c 'import numpy; numpy.test()'
 ```
-###安装Scipy
+### 安装Scipy
 ```shell
 sudo pip install scipy
 ```
@@ -54,7 +54,7 @@ sudo pip install scipy
 ```shell
 python -c 'import scipy; scipy.test()'
 ```
-##3、安装Cuda
+## 3、安装Cuda
 cuda可以根据系统的版本在[官网](https://developer.nvidia.com/cuda-downloads)下载。这里下载的是deb版的。
 下载完后解压并安装
 ```shell
@@ -69,7 +69,7 @@ export CUDA_HOME=/usr/local/cuda-8.0
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$CUDA_HOME/lib64:$CUDA_HOME/extras/CUPTI/lib64"
 export PATH=$CUDA_HOME/bin:$PATH
 ```
-##4、安装cudnn
+## 4、安装cudnn
 若只需要theano环境，可以只装cuda，若需要tensorflow还需要装cudnn。cudnn可以根据系统的版本在[官网](https://developer.nvidia.com/cudnn)下载，下载前需要先注册。
 安装cudnn
 ```shell
@@ -80,7 +80,7 @@ sudo cp -P lib64/libcudnn* /usr/lib/x86_64-linux-gnu/
 sudo chmod a+r /usr/lib/x86_64-linux-gnu/libcudnn*
 sudo ldconfig
 ```
-##5、安装theano
+## 5、安装theano
 安装
 ```shell
 sudo pip install theano
@@ -98,7 +98,7 @@ device=gpu
 [cuda]
 root=/usr/local/cuda-8.0
 ```
-##6、安装tensorflow
+## 6、安装tensorflow
 Ubuntu14.04的wheel较老，需要先更新
 在[官网](https://pypi.python.org/pypi/wheel#downloads)下载wheel，安装
 ```shell
