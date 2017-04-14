@@ -28,9 +28,9 @@ format = columns
 ```shell
 sudo apt-get update
 ```
-##2、安装NumPy和SciPy
+## 2、安装NumPy和SciPy
 在Ubuntu中这些软件包必须在安装Numpy和Scipy之前安装，否则numpy和scipy就会安装失败。
-###安装BLAS, LAPACK, ATLAS
+### 安装BLAS, LAPACK, ATLAS
 ```shell
 sudo apt-get install -y libopenblas-dev liblapack-dev libatlas-base-dev gcc g++ git gfortran
 ```
