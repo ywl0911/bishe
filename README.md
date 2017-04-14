@@ -16,7 +16,7 @@ OS：Ubuntu 14.04 LTS
 ```python
 sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list 
 ```
-###改pip的源：
+### 改pip的源：
 ```shell
 mkdir ~/.pip
 vi ~/.pip/pip.conf
