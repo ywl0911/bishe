@@ -107,9 +107,13 @@ sudo pip install wheel-0.30.0a0-py2.py3-none-any.whl
 ```
 安装tensorflow，安装gpu版本的，python2和3不一样
 ```shell
+3.4
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp34-cp34m-linux_x86_64.whl
 sudo pip3 install --upgrade $TF_BINARY_URL
-
+3.5
+export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.2.0-cp35-cp35m-linux_x86_64.whl
+sudo pip3 install --upgrade $TF_BINARY_URL
+2.7
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.1-cp27-none-linux_x86_64.whl
 sudo pip install --upgrade $TF_BINARY_URL
 ```
